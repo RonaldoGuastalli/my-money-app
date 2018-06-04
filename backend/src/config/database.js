@@ -2,8 +2,8 @@
 
 /*
     uso do mongoose
-    evitar wargin no console
-    conexão com BD
+    evitar warn no console
+    conexão com BD e export
     referenciar este arquivo no loader.js
 */
 
