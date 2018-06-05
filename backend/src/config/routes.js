@@ -9,12 +9,13 @@ const express = require('express')
 module.exports = function (server) {
 
     // Definir URL base para todas as rotas
-    const router = express.Router()
-    server.use('/api', router) //registra quando /api, chamar router
+    const router = express.Router() // instancia de Router
+    server.use('/api', router) //router é middleware
 
     // Rotas de Ciclo de Pagamento
     const BillingCycle = require('../api/billingCycle/billingCycleService') // o resultado billingCycleService
-    BillingCycle.register(router, '/billingCycles') // registra o web server para api/billingCycles get, post, ...
+    BillingCycle.register(router, '/billingCycles') // register() do node-restful faz o mapeamento de todas as rotas para rotas de pagamento, portanto
+                                                    //para acessar estas rotas de pagamento devemos http://localhost:<porta>/api/billingcycles
 }
 
 /* 
