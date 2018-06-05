@@ -10,7 +10,7 @@ module.exports = function (server) {
 
     // Definir URL base para todas as rotas
     const router = express.Router()
-    server.use('/api', router) //registra que quando /api, chamar router
+    server.use('/api', router) //registra quando /api, chamar router
 
     // Rotas de Ciclo de Pagamento
     const BillingCycle = require('../api/billingCycle/billingCycleService') // o resultado billingCycleService
