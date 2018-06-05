@@ -5,10 +5,15 @@
 
 // refencia aos objetos 
 const BillingCycle = require('./billingCycle')
+//referencia aos erros
+const errorHandler = require('../common/errorHandler')
+
 // criar verbos para o crud - express
 BillingCycle.methods(['get', 'post', 'put', 'delete'])
 // validação tanto no put como no post
 BillingCycle.updateOptions({ new: true, runValidators: true })
+//uso do middleware para os metodos put e post
+BillingCycle.after('post', errorHandler).after('put', errorHandler)
 
 /*
     rota para quantidade de registros, o método register (BillingCycle.register(router, '/billingCycles'))
