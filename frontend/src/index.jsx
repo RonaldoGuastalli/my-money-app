@@ -1,4 +1,5 @@
 /* 
+    o webpack começa por este arquivo
     reactDom -- para interagir com a pagina
     <App /> -- vem do app.jxs
     'app' -- é justamente o app que esta na div (<div id="app"></div>) em /frontend/public/index.html
