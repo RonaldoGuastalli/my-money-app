@@ -8,8 +8,8 @@
    - path='#billingCycles' -- http://localhost:8080/#billingCycles
 */
 
-import React from 'react';
-import MenuItem from './menuItem';
+import React from 'react'
+import MenuItem from './menuItem'
 import MenuTree from './menuTree'
 
 export default props => (
