@@ -1,5 +1,5 @@
 /* 
-    - estrutura do rodape
+    - estrutura do rodapé
     - alterar app.js
 */
 
